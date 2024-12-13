@@ -10,21 +10,7 @@ function App() {
 
   const { todoReducer, dispatch } = useContext(TodoContext)
   //çek 
-  useEffect(() => {
-    try {
-
-      axios.get("http://localhost:3001/todos").then((response) => {
-        dispatch({
-          type: "ListTodos",
-          payload: response.data,
-        });
-      })
-    } catch (error) {
-        console.error(error);
-    }
-
-  }, []);
-  console.log(todoReducer);
+  
   return (
     <>
 

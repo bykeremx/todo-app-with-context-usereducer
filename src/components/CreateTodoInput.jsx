@@ -31,10 +31,6 @@ const CreateTodoInput = () => {
                 payload: newTodo,
             });
         }
-
-
-
-
     }
 
     return (
